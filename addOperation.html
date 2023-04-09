@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            两数相加
+        </title>
+        <style>
+            input{
+                width:40px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h5>输入两个数</h5>
+        <input id="num1" type="number">
+        <input id="num2" type="number">
+        <input id="num" type="number">
+        <button onclick="add()">确定</button>
+        <script>
+            function add()
+        {
+            var n1 = Number(document.getElementById("num1").value);
+            var n2 = Number(document.getElementById("num2").value);
+            let n3 = n1 + n2;
+            document.getElementById("num").value=n3;
+        }
+           
+        </script>
+    </body>
+</html>
